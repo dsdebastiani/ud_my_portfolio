@@ -20,40 +20,23 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_popular_movies)));
+        Button btnPopularMovies = (Button) findViewById(R.id.btn_popular_movies);
+        btnPopularMovies.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_popular_movies)));
 
-        Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_stock_hawk)));
+        Button btnStockHawk = (Button) findViewById(R.id.btn_stock_hawk);
+        btnStockHawk.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_stock_hawk)));
 
-        Button button3 = (Button) findViewById(R.id.button3);
-        button3.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_build_it_bigger)));
+        Button btnBuildItBigger = (Button) findViewById(R.id.btn_build_it_bigger);
+        btnBuildItBigger.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_build_it_bigger)));
 
-        Button button4 = (Button) findViewById(R.id.button4);
-        button4.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_make_app_material)));
+        Button btnMakeAppMaterial = (Button) findViewById(R.id.btn_make_app_material);
+        btnMakeAppMaterial.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_make_app_material)));
 
-        Button button5 = (Button) findViewById(R.id.button5);
-        button5.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_go_ubiquitous)));
+        Button btnGoUbiquitous = (Button) findViewById(R.id.btn_go_ubiquitous);
+        btnGoUbiquitous.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_go_ubiquitous)));
 
-        Button button6 = (Button) findViewById(R.id.button6);
-        button6.setOnClickListener(new OnClickButtonToast(getString(R.string.btn_capstone)));
+        Button btnCapstone = (Button) findViewById(R.id.btn_capstone);
+        btnCapstone.setOnClickListener(new OnClickButtonToast(this, getString(R.string.btn_capstone)));
     }
 
-    /**
-     * Custom onClickListener for my buttons.
-     */
-    public static class OnClickButtonToast implements View.OnClickListener {
-
-        private String app;
-
-        OnClickButtonToast(String app) {
-            this.app = app;
-        }
-
-        @Override
-        public void onClick(View view) {
-            Toast.makeText(view.getContext(), view.getContext().getString(R.string.toast_message, app),
-                    Toast.LENGTH_SHORT).show();
-        }
-    }
 }

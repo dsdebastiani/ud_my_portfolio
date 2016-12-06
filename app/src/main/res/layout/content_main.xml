@@ -22,7 +22,7 @@
         >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btn_popular_movies"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_stock_hawk"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_build_it_bigger"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_make_app_material"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_go_ubiquitous"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btn_capstone"
             style="@style/AppTheme.ButtonColored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
